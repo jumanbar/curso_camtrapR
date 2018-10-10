@@ -81,7 +81,7 @@ Esto implica varias cosas:
 
 ```{r crecimiento_paquetes, warning=FALSE, echo=FALSE, cache=TRUE, fig.cap="Figura 1: durante 20 se ha mantenido un crecimiento exponencial."}
 require(ggplot2)
-pkgs <- read.csv("data/paquetes.csv")
+pkgs <- read.csv("../data/paquetes.csv")
 ggplot(pkgs, aes(as.Date(first_release), index)) +
   geom_line(size = 1.5, col = "skyblue") +
   scale_x_date(date_breaks = '2 year', date_labels = '%Y') +
