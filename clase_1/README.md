@@ -8,7 +8,8 @@ Proponemos el siguiente orden para esta clase:
 
 ### 1. R, una recorrida:
 
-Archivos: camtrapR_clase_1_consejos (html, pdf o Rmd)
+Archivos:
+  - camtrapR_clase_1_consejos.Rmd
 
 Este documento muestra las características principales de R, incluyendo las preguntas ¿qué es? ¿para qué sirve? ¿por qué R?. También da consejos para tener un buen vínculo con R, incluyendo formas de conseguir ayuda y enfrentarse a errores.
 
