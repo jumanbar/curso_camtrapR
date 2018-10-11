@@ -15,7 +15,7 @@ Este documento muestra las características principales de R, incluyendo las pre
 ### 2. Guión introductorio con caso de estudio:
 
 Archivos:
-  - camtrapR_clase_1.R, el cual precisa de:
+  - clase_1.R, el cual precisa de:
   - data/tabla_registros.csv y/o
   - data/tabla_registros.xlsx
 
