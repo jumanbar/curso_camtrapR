@@ -15,8 +15,8 @@ Este documento muestra las características principales de R, incluyendo las pre
 
 ### 2. Guión introductorio con caso de estudio:
 
-Archivos:
-  - clase_1.R, el cual precisa de:
+Archivos necesarios:
+  - [clase_1.R](clase_1.R), el cual precisa de:
   - [../data/tabla_registros.csv](../data/tabla_registros.csv) y/o
   - [../data/tabla_registros.xlsx](../data/tabla_registros.xlsx)
 
@@ -24,7 +24,7 @@ El guión o script de R (camtrapR_clase_1.R) es un archivo de texto plano que se
 
 ### Lista completa de archivos y carpetas:
 
-- [camtrapR_clase_1.R](camtrapR_clase_1.R)
+- [clase_1.R](camtrapR_clase_1.R)
 - [camtrapR_clase_1_consejos.Rmd](camtrapR_clase_1_consejos.Rmd): archivo "R markdown", usado para crear documento html (usando [knitr](https://yihui.name/knitr/)).
 - data
   + [tabla_registros.csv](../data/tabla_registros.csv): tabla usada en el guión camtrapR_clase_1.R. Formato CSV (comma separated values; texto plano).
