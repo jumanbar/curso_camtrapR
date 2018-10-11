@@ -5,6 +5,6 @@ Repositorio con el material generado.
 
 Autores:
 
-Juan Manuel Barreneche - jumanbar <at> gmail.com
-GPC
-FGP
+Juan Manuel Barreneche - jumanbar <at> gmail.com  
+GPC  
+FGP  
