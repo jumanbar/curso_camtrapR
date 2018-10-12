@@ -25,7 +25,7 @@ El guión o script de R (camtrapR_clase_1.R) es un archivo de texto plano que se
 ### Lista completa de archivos y carpetas:
 
 - [clase_1.R](camtrapR_clase_1.R)
-- [clase_1_consejos.Rmd](clase_1_consejos.Rmd): archivo "R markdown", usado para crear documento html (usando [knitr](https://yihui.name/knitr/)).
+- [clase_1_consejos.Rmd](clase_1_consejos.Rmd): archivo "R markdown", usado para crear documento html (vía [knitr](https://yihui.name/knitr/)).
 - data
   + [tabla_registros.csv](../data/tabla_registros.csv): tabla usada en el guión camtrapR_clase_1.R. Formato CSV (comma separated values; texto plano).
   + [tabla_registros.xlsx](../data/tabla_registros.xlsx): tabla usada en el guión camtrapR_clase_1.R. Format Xlsx (Excel).
