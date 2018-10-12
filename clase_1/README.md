@@ -30,10 +30,3 @@ El guión o script de R (camtrapR_clase_1.R) es un archivo de texto plano que se
   + [tabla_registros.csv](../data/tabla_registros.csv): tabla usada en el guión camtrapR_clase_1.R. Formato CSV (comma separated values; texto plano).
   + [tabla_registros.xlsx](../data/tabla_registros.xlsx): tabla usada en el guión camtrapR_clase_1.R. Format Xlsx (Excel).
 - img_clase1: imágenes auxiliares para el el Rmd
-
-Para hacer
-==========
-
-Arreglar el .Rmd, usando encoding correcto y haciendo referencias correctas a los archivos (carpeta img_clase1, deprecar la generada automáticamente al hacer el html).
-
-
