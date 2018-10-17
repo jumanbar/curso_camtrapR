@@ -21,6 +21,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+# Preparación de sesión de R
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 library(tidyverse)
 ```
@@ -75,22 +76,26 @@ Esto implica varias cosas:
 
 - Es gratis.
 - Cualquiera puede "ver las [entrañas](https://stat.ethz.ch/R/daily/)" del software.
-- Incorpora aportes de la comunidad de usuarios, generalmente en forma de paquetes / bibliotecas (Figura 1), pero también a través de tutoriales o cursos, muchos de ellos gratuitos.
+- Incorpora aportes de la comunidad de usuarios, generalmente en forma de paquetes / bibliotecas, pero también a través de tutoriales o cursos, muchos de ellos gratuitos.
 
 ---
 
-```{r crecimiento_paquetes, warning=FALSE, echo=FALSE, cache=TRUE, fig.cap="Figura 1: durante 20 se ha mantenido un crecimiento exponencial."}
+```r
+# Código R: número de paquetes en CRAN vs. año
 require(ggplot2)
-pkgs <- read.csv("data/paquetes.csv")
+pkgs <- read.csv("../data/paquetes.csv")
 ggplot(pkgs, aes(as.Date(first_release), index)) +
   geom_line(size = 1.5, col = "skyblue") +
   scale_x_date(date_breaks = '2 year', date_labels = '%Y') +
   scale_y_continuous(breaks = seq(0, 14000, 1000)) +
-  xlab('') + ylab('') + theme_bw() +
-  ggtitle('Número de paquetes de R alguna vez publicados en CRAN')
+  xlab("Año") + ylab("") + theme_bw() +
+  ggtitle("Número de paquetes de R alguna vez publicados en CRAN", 
+          "Durante 20 se ha mantenido un crecimiento exponencial.")
 ```
 
+![Basado en código de Henrik Bengtsson.](img_clase1/crecimiento_paquetes-1.png )
 
+([Idea original y reporte por Henrik Bengtsson.](https://stat.ethz.ch/pipermail/r-devel/2016-February/072388.html))
 
 ---
 
@@ -221,13 +226,13 @@ Más info: [curso R](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1
 
 Al abrir R siempre se inicia una nueva sesión (o se carga una anterior). Una sesión está compuesta por el conjunto de objetos que nosotres *cargamos* en ella. Un ejemplo bien simple es crear un objeto, usando la asignación `<-` (`=` también funciona):
 
-```{r}
+```r
 x <- 5
 ```
 
 Luego de ejectuar este comando, podemos utilizar al objeto `x` en futuros comandos. Por ejemplo:
 
-```{r}
+```r
 x * 4
 ```
 
@@ -243,7 +248,7 @@ Los objetos de la sesión se pueden ver con el comando `ls()`, o mirando la secc
 A los objetos que creamos se le suman aquellos paquetes que cargamos con el comando `library()`.
 
 
-```{r}
+```r
 library(readxl) # Probar con otros paquetes, si este no funciona
 ```
 
@@ -370,9 +375,10 @@ Error in plot.default(sort(rnorm(200)), pch = 8, col = "red", xlab = "Rank",  :
 
 Y sin embargo el siguiente comando sí está escrito correctamente:
 
-```{r 3_errores_solucionado, fig.cap="Figura 2: Al fin salió la figura."}
+```r
 plot(sort(rnorm(60)), pch=8, col="red", xlab="Rank",
 ylab="Variable Gaussiana")
 ```
+![Al fin salió la figura.](img_clase1/3_errores_solucionado-1.png)
 
 ------
