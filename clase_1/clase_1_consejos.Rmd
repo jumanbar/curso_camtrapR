@@ -103,7 +103,7 @@ Además, R proporciona una **enorme flexibilidad**: *el cielo es el límite*.
 
 Por último, todes contamos con el **apoyo de una gran comunidad de usuaries**: la adopción de R como lingua franca en estadística a través de continentes y disciplinas ha sido explosiva en la última década. Esta comunidad se caracteriza, como tantas otras en Software Libre, por una gran solidaridad para ayudar a quiénes lo necesitan. En la práctica, esto se traduce en listas de mail, foros y comunidades dedicadas al tema (ej: [R-Ladies Montevideo](https://twitter.com/RLadiesMVD)). [Más info acá](https://www.r-project.org/help.html).
 
-Recomendación: explorar [datacamp.com](https://www.datacamp.com/community/open-courses), puede que encuentren algún [curso de R en español](https://www.datacamp.com/community/open-courses/introduccion-a-r).
+Recomendación: explorar [datacamp.com](https://www.datacamp.com/community/open-courses), puede que encuentren algún [curso de R en español](https://www.datacamp.com/community/open-courses/introduccion-a-r). También: [serie de videos del curso IMSER](https://www.youtube.com/watch?v=b-y3-7wMeco&list=PL41C5vgvqV_PA-e634Q4wn5MKbubqv6P9).
 
 ## Evolución de R y su interfaz:
 
@@ -262,6 +262,9 @@ Aquí también nos auxilia la interfaz de RStudio, gracias a la ventana "paquete
 
 ![Ventana de paquetes en RStudio.](img_clase1/rstudio_paquetes.png)
 
+
+
+
 # R y tu: como construir un buen vínculo
 
 El objetivo de esta clase es facilitar la adopción de R como una herramienta más en el repertorio de cada une.
@@ -330,7 +333,7 @@ Por otro lado, los conjuntos de datos, o datasets, también tienen sus propias p
 ?iris # Edgar Anderson's Iris Data
 ```
 
-Más info: [curso R](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.3-uso-de-la-ayuda.markdown)
+Más sobre el uso de la ayuda de R [aquí](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.3-uso-de-la-ayuda.markdown)
 
 ## Mensajes de error
 
@@ -382,3 +385,5 @@ ylab="Variable Gaussiana")
 ![Al fin salió la figura.](img_clase1/3_errores_solucionado-1.png)
 
 ------
+
+Más sobre errores y afines [aquí](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.3.b-extra-errores-y-afines.markdown).
