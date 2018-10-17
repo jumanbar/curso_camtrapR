@@ -56,17 +56,26 @@ carpeta_salidas <- "../salidas"
 # Colocamos las imagenes en las carpeta correspondientes, una
 # copia ya clasificadas con tag (etiqueta) o con carpetas
 
-# Instalar ExifTool para leer metadatos de archivos. Para esto hay que
+# Instalar ExifTool para leer metadatos de archivos ------------
+
+# Para esto hay que:
  
 # 1. Descargar el archivo zip de esta página:
 # https://sno.phy.queensu.ca/~phil/exiftool/
 
 # 2. Extraer del zip el archivo .exe. en el directorio de
-# trabajo que definimos antes. Cambiar el nombre del archivo (en
-# vez de "exiftool(-k).exe", debe llamarse "exiftool.exe").
-exiftool_dir <- getwd()
-exiftoolPath(exiftoolDir = exiftool_dir)
+# trabajo que definimos antes.
 
+# 3. Cambiar el nombre del archivo (en vez de
+# "exiftool(-k).exe", debe llamarse "exiftool.exe").
+
+# Una vez instalado, corremos el siguiente comando, que sirve
+# para que todas las funciones del camtrapR encuentren al
+# archivo exiftool.exe cada vez que lo necesiten usar:
+exiftoolPath(exiftoolDir = getwd())
+
+# ¿Por qué usamos getwd() aquí?¿Podría usarse otro valor para
+# este argumento de la función exiftoolPath?
 
 
 
