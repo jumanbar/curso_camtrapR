@@ -1,1 +1,5 @@
-Carpeta con imágenes (capturas de pantalla) usadas por el archivo "Etiquetado_con_digiKam.md".
+Carpeta con imágenes (capturas de pantalla) usadas por los archivos
+
+- Etiquetado_con_digiKam.md  
+- Etiquetado_con_digiKam.Rmd
+
