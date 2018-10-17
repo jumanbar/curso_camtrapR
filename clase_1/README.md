@@ -20,7 +20,7 @@ Archivos necesarios:
   - [../data/tabla_registros.csv](../data/tabla_registros.csv) y/o
   - [../data/tabla_registros.xlsx](../data/tabla_registros.xlsx)
 
-El guión o script de R (camtrapR_clase_1.R) es un archivo de texto plano que se puede abrir con RStudio (para lo cual está pensado) o cualquier editor de texto plano (ej.: notepad). La idea es ir leyendo las instrucciones allí indicadas (en comentarios, textos precedidos por el `#`) e ir probando los comandos expuestos (usando el atajo `Ctrl + Enter`). También se invita y recomienda probar con variantes de dichos comandos e investigar qué cambia en los resultados (incuyendo errores).
+El guión o script de R (camtrapR_clase_1.R) es un archivo de texto plano que se puede abrir con [RStudio](https://www.rstudio.com/) (para lo cual está pensado) o cualquier editor de texto plano (ej.: notepad). La idea es ir leyendo las instrucciones allí indicadas (en comentarios, textos precedidos por el `#`) e ir probando los comandos expuestos (usando, en RStudio, el atajo `Ctrl + Enter`). También se invita y recomienda probar con variantes de dichos comandos e investigar qué cambia en los resultados (incuyendo errores).
 
 ### Lista completa de archivos y carpetas:
 
