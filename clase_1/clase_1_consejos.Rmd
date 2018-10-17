@@ -27,33 +27,33 @@ library(tidyverse)
 
 # Primero las presentaciones
 
-## Qu? es R
+## Qué es R
 
-Se puede encontrar por ah? que R es un "Ambiente de computaci?n estad?stica". Con esto quieren decir muchas cosas, pero sobre todo R es:
+Se puede encontrar por ahí que R es un "Ambiente de computación estadística". Con esto quieren decir muchas cosas, pero sobre todo R es:
 
-- Un lenguaje de programaci?n
-- Una serie de "paquetes" (funcionalidades) con soluciones para un amplio rango de tareas estad?sticas, incluyendo modelaci?n, aprendizaje autom?tico, clasificaci?n, etc.
-- Trabajar con tablas de datos complejas, siguiendo una l?gica similar a una base de datos (ie: tablas con columnas de distinto tipo, como pueden ser num?ricas, texto, fechas, etc...).
-- Herramientas gr?ficas poderosas para visualizar la informaci?n.
+- Un lenguaje de programación
+- Una serie de "paquetes" (funcionalidades) con soluciones para un amplio rango de tareas estadísticas, incluyendo modelación, aprendizaje automático, clasificación, etc.
+- Trabajar con tablas de datos complejas, siguiendo una lógica similar a una base de datos (ie: tablas con columnas de distinto tipo, como pueden ser numéricas, texto, fechas, etc...).
+- Herramientas gráficas poderosas para visualizar la información.
 
 
 ## R como herramienta
 
 > Cada herramienta para la tarea que fue concebida.
 
-R est? concebido para estad?stica y an?lisis de datos y, como tal, hacemos bien en usarlo para este cometido, combin?ndolo con otras herramientas que son las indicadas para diferentes tareas (ej.: seremos mucho m?s productives usando un SIG para trabajar con mapas, a?n si [hay formas de usar R para esto](https://pakillo.github.io/R-GIS-tutorial/)*).
+R está concebido para estadística y análisis de datos y, como tal, hacemos bien en usarlo para este cometido, combinándolo con otras herramientas que son las indicadas para diferentes tareas (ej.: seremos mucho más productives usando un SIG para trabajar con mapas, aún si [hay formas de usar R para esto](https://pakillo.github.io/R-GIS-tutorial/)*).
 
 (*: No queremos decir con esto que sea necesariamente malo usar R para trabajar con SIG, o cualquier otra tarea, solo que en general recomendamos usar la herramienta correcta para cada cometido.)
 
-R se caracteriza por tener muchas funcionalidades a disposici?n y muchas formas de lograr el miso resultado (punto que genera alguna discordia entre la comunidad de usuaries). El lado positivo es que ofrece una gran flexibilidad y permite a cada qui?n encontrar su forma de hacer las cosas. Por otro lado esto tambi?n puede generar desconcierto, especialmente en principiantes.
+R se caracteriza por tener muchas funcionalidades a disposición y muchas formas de lograr el miso resultado (punto que genera alguna discordia entre la comunidad de usuaries). El lado positivo es que ofrece una gran flexibilidad y permite a cada quién encontrar su forma de hacer las cosas. Por otro lado esto también puede generar desconcierto, especialmente en principiantes.
 
-Como todo en la vida, hay que buscar un balance entre costos y beneficios, y R no es la excepci?n.
+Como todo en la vida, hay que buscar un balance entre costos y beneficios, y R no es la excepción.
 
 ### Costos:
 
-Hay que ser baqueane: R requiere un cierto manejo m?nimo para poder explotar sus potencialidades. Para un mortal cualquiera, es como empezar a andar en bici sin rueditas luego de usarlas toda la vida.
+Hay que ser baqueane: R requiere un cierto manejo mínimo para poder explotar sus potencialidades. Para un mortal cualquiera, es como empezar a andar en bici sin rueditas luego de usarlas toda la vida.
 
-> R nos da todos los ingredientes para hacer lo que querramos... s?lo faltan las instrucciones!
+> R nos da todos los ingredientes para hacer lo que querramos... sólo faltan las instrucciones!
 
 ---
 
@@ -61,11 +61,11 @@ Hay que ser baqueane: R requiere un cierto manejo m?nimo para poder explotar sus
 
 ---
 
-La realidad es que hay m?s instrucciones disponibles de lo que parece al principio, y en verdad R nos proporciona muchas herramientas muy elaboradas para hacer lo que precisamos, las cuales se potencian cuando las empezamos a combinar.
+La realidad es que hay más instrucciones disponibles de lo que parece al principio, y en verdad R nos proporciona muchas herramientas muy elaboradas para hacer lo que precisamos, las cuales se potencian cuando las empezamos a combinar.
 
-> En otras palabras, *no es tan as?*.
+> En otras palabras, *no es tan así*.
 
-De todas formas, si bien la forma de interactuar con R ha evolucionado mucho en los ?ltimos a?os (ej: RStudio), sigue siendo desafiante y contraintuitivo en los primeros pasos. Una fuente de frustraci?n frecuente es que exige mucha precisi?n a la hora de escribr los comandos. Otra es el enigm?tico lenguaje en que se expresa toda la informaci?n, desde los comandos hasta la documentaci?n, pasando por los mensajes de error y de advertencia.
+De todas formas, si bien la forma de interactuar con R ha evolucionado mucho en los últimos años (ej: RStudio), sigue siendo desafiante y contraintuitivo en los primeros pasos. Una fuente de frustración frecuente es que exige mucha precisión a la hora de escribr los comandos. Otra es el enigmático lenguaje en que se expresa toda la información, desde los comandos hasta la documentación, pasando por los mensajes de error y de advertencia.
 
 ### Beneficios:
 
@@ -74,41 +74,41 @@ Para empezar, R es **[Software Libre](https://es.wikipedia.org/wiki/Software_lib
 Esto implica varias cosas:
 
 - Es gratis.
-- Cualquiera puede "ver las [entra?as](https://stat.ethz.ch/R/daily/)" del software.
-- Incorpora aportes de la comunidad de usuarios, generalmente en forma de paquetes / bibliotecas (Figura 1), pero tambi?n a trav?s de tutoriales o cursos, muchos de ellos gratuitos.
+- Cualquiera puede "ver las [entrañas](https://stat.ethz.ch/R/daily/)" del software.
+- Incorpora aportes de la comunidad de usuarios, generalmente en forma de paquetes / bibliotecas (Figura 1), pero también a través de tutoriales o cursos, muchos de ellos gratuitos.
 
 ---
 
 ```{r crecimiento_paquetes, warning=FALSE, echo=FALSE, cache=TRUE, fig.cap="Figura 1: durante 20 se ha mantenido un crecimiento exponencial."}
 require(ggplot2)
-pkgs <- read.csv("../data/paquetes.csv")
+pkgs <- read.csv("data/paquetes.csv")
 ggplot(pkgs, aes(as.Date(first_release), index)) +
   geom_line(size = 1.5, col = "skyblue") +
   scale_x_date(date_breaks = '2 year', date_labels = '%Y') +
   scale_y_continuous(breaks = seq(0, 14000, 1000)) +
   xlab('') + ylab('') + theme_bw() +
-  ggtitle('N?mero de paquetes de R alguna vez publicados en CRAN')
+  ggtitle('Número de paquetes de R alguna vez publicados en CRAN')
 ```
 
 
 
 ---
 
-Adem?s, R proporciona una **enorme flexibilidad**: *el cielo es el l?mite*.
+Además, R proporciona una **enorme flexibilidad**: *el cielo es el límite*.
 
-Por ?ltimo, todes contamos con el **apoyo de una gran comunidad de usuaries**: la adopci?n de R como lingua franca en estad?stica a trav?s de continentes y disciplinas ha sido explosiva en la ?ltima d?cada. Esta comunidad se caracteriza, como tantas otras en Software Libre, por una gran solidaridad para ayudar a qui?nes lo necesitan. En la pr?ctica, esto se traduce en listas de mail, foros y comunidades dedicadas al tema (ej: [R-Ladies Montevideo](https://twitter.com/RLadiesMVD)). [M?s info ac?](https://www.r-project.org/help.html).
+Por último, todes contamos con el **apoyo de una gran comunidad de usuaries**: la adopción de R como lingua franca en estadística a través de continentes y disciplinas ha sido explosiva en la última década. Esta comunidad se caracteriza, como tantas otras en Software Libre, por una gran solidaridad para ayudar a quiénes lo necesitan. En la práctica, esto se traduce en listas de mail, foros y comunidades dedicadas al tema (ej: [R-Ladies Montevideo](https://twitter.com/RLadiesMVD)). [Más info acá](https://www.r-project.org/help.html).
 
-Recomendaci?n: explorar [datacamp.com](https://www.datacamp.com/community/open-courses), puede que encuentren alg?n [curso de R en espa?ol](https://www.datacamp.com/community/open-courses/introduccion-a-r).
+Recomendación: explorar [datacamp.com](https://www.datacamp.com/community/open-courses), puede que encuentren algún [curso de R en español](https://www.datacamp.com/community/open-courses/introduccion-a-r).
 
-## Evoluci?n de R y su interfaz:
+## Evolución de R y su interfaz:
 
-El R fue creado hace unos 20 a?os aproximadamente, basado en S+, un software propietario con los mismos fines y sintaxis similar.
+El R fue creado hace unos 20 años aproximadamente, basado en S+, un software propietario con los mismos fines y sintaxis similar.
 
 -------
 
 ![S+, el abuelo de R.](img_clase1/splus.gif)
 
-Durante mucho tiempo mantuvo una interfaz gr?fica (GUI) muy b?sica (en Windows, en Linux era m?s que nada usado en la l?nea de comandos o CLI).
+Durante mucho tiempo mantuvo una interfaz gráfica (GUI) muy básica (en Windows, en Linux era más que nada usado en la línea de comandos o CLI).
 
 ------
 
@@ -116,15 +116,15 @@ Durante mucho tiempo mantuvo una interfaz gr?fica (GUI) muy b?sica (en Windows, 
 
 -------
 
-Desde el 2011 existe un entorno de desarrollo integrado (IDE) que r?pidamente se populariz?, convirti?ndose pr?cticamente en la interfaz est?ndar entre la comunidad de usuarios de R.
+Desde el 2011 existe un entorno de desarrollo integrado (IDE) que rápidamente se popularizó, convirtiéndose prácticamente en la interfaz estándar entre la comunidad de usuarios de R.
 
 -------
 
-![RStudio, el IDE que el pueblo ped?a.](img_clase1/rstudio.png)
+![RStudio, el IDE que el pueblo pedía.](img_clase1/rstudio.png)
 
 -------
 
-No conformes con reconfigurar la forma en que interactuamos con R a nivel de IDE, esta gente ha desarrollado un conjunto de paquetes "con opiniones fuertes", que est? dise?ado para trabajar bien en conjunto. Este conjunto se a dado a llamar **tidyverse**, y al igual que RStudio, ha ganado mucha popularidad.
+No conformes con reconfigurar la forma en que interactuamos con R a nivel de IDE, esta gente ha desarrollado un conjunto de paquetes "con opiniones fuertes", que está diseñado para trabajar bien en conjunto. Este conjunto se a dado a llamar **tidyverse**, y al igual que RStudio, ha ganado mucha popularidad.
 
 -------
 
@@ -132,44 +132,44 @@ No conformes con reconfigurar la forma en que interactuamos con R a nivel de IDE
 
 -------
 
-![No se peleen gurises que ac? estamos entre amigues.](img_clase1/tidyverse_rbasic.jpg)
+![No se peleen gurises que acá estamos entre amigues.](img_clase1/tidyverse_rbasic.jpg)
 
 -------
 
 
-# Conceptos y comandos b?sicos
+# Conceptos y comandos básicos
 
 ## Primeros pasos
 
-Lo m?s sencillo tal vez sea escribir una suma y ejecutarla:
+Lo más sencillo tal vez sea escribir una suma y ejecutarla:
 
 ```r
 1 + 1
 ```
 
-(Escribir el comando / expresi?n que queremos ejecutar y apretar Enter)
+(Escribir el comando / expresión que queremos ejecutar y apretar Enter)
 
-Al hacer esto R nos da inmediatamente el resultado, usando una codificaci?n para distinguir comandos (input; entradas) de resultados (output; salidas):
+Al hacer esto R nos da inmediatamente el resultado, usando una codificación para distinguir comandos (input; entradas) de resultados (output; salidas):
 
 ```r
 > 1 + 1
 [1] 2
 ```
 
-El input es `1 + 1` y el output es 2. El `[1]` que all? aparece indica que 2 es el primer elemento de la salida.
+El input es `1 + 1` y el output es 2. El `[1]` que allí aparece indica que 2 es el primer elemento de la salida.
 
-Si nuestro comando est? incompleto, R nos indica que hay que seguir escribiendo, con el prompt `+`:
+Si nuestro comando está incompleto, R nos indica que hay que seguir escribiendo, con el prompt `+`:
 
 ```r
 > 1 + 1 + 89 + 5 * 3 +
 + 
 ```
 
-Otra cosa muy ?til es que l?s ?rdenes se pueden reciclar: la historia de comandos se guarda autom?ticamente y se puede recorrer con las flechas hacia arriba y hacia abajo. En RStudio adem?s hay una ventanita en la que podemos ir viendo esa historia a medida que ejecutamos comandos.
+Otra cosa muy útil es que lás órdenes se pueden reciclar: la historia de comandos se guarda automáticamente y se puede recorrer con las flechas hacia arriba y hacia abajo. En RStudio además hay una ventanita en la que podemos ir viendo esa historia a medida que ejecutamos comandos.
 
 > Navergar por la historia de comandos ejecutados.
 
-> Experimentar con algunos comandos m?s:
+> Experimentar con algunos comandos más:
 
 ```r
 sqrt(2)
@@ -181,19 +181,19 @@ plot(rnorm(50))
 
 ## Guiones (scripts)
 
-La din?mica de trabajo t?pica con R involucra el uso de guiones, que no son otra cosa que archivos de texto plano con una serie de comandos de R.
+La dinámica de trabajo típica con R involucra el uso de guiones, que no son otra cosa que archivos de texto plano con una serie de comandos de R.
 
-> Un formato de texto plano conocido es el `.txt`, as? como los `.csv`; la extensi?n no es m?s que un detalle. En el caso de R, se utilizan las extensiones `.R` o `.r`.
+> Un formato de texto plano conocido es el `.txt`, así como los `.csv`; la extensión no es más que un detalle. En el caso de R, se utilizan las extensiones `.R` o `.r`.
 
-Los guiones nos permiten ir guardando nuestro trabajo y volver a utilizarlo cuando precisemos. Tambi?n facilitan el compartir con otras personas este trabajo. Los comandos contenidos en ellos conforman el llamado **[c?digo fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente)** (source code, en ingl?s).
-
--------
-
-![Un gui?n o c?digo fuente en RStudio.](img_clase1/rstudio_guion.png)
+Los guiones nos permiten ir guardando nuestro trabajo y volver a utilizarlo cuando precisemos. También facilitan el compartir con otras personas este trabajo. Los comandos contenidos en ellos conforman el llamado **[código fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente)** (source code, en inglés).
 
 -------
 
-Con la popularizaci?n de RStudio, la forma de interactuar con los guiones cambi? bastante, debido a una simple combinaci?n de teclado:
+![Un guión o código fuente en RStudio.](img_clase1/rstudio_guion.png)
+
+-------
+
+Con la popularización de RStudio, la forma de interactuar con los guiones cambió bastante, debido a una simple combinación de teclado:
 
     Ctrl + Enter
 
@@ -206,20 +206,20 @@ log(76)
 exp(46 * 4 - 1)
 ```
 
-La idea de este comando es ir avanzando l?nea a l?nea por nuestro c?digo fuente, contenido en el gui?n de R.
+La idea de este comando es ir avanzando línea a línea por nuestro código fuente, contenido en el guión de R.
 
 Otras facilidades de RStudio:
 
-- **Ejecutar c?digo seleccionado**: si sombreamos un pedazo de c?digo y apretamos `Ctrl + Enter`, ejecuta s?lo esa parte.
-- **Autocompletado**: a medida que escribimos un nombre nos sugiere opciones para completar (ej.: `col...`). Usar tecla "tab" (indentaci?n).
-- **Argumentos de las funciones**: cuando escribimos una funci?n nos muestra los argumentos que lleva (ej.: `log`). Usar tecla "tab" (indentaci?n).
-- **Otras**: navegaci?n por el gui?n, "embellecer c?digo", atajos (`Alt + Shift + k`) y m?s ...
+- **Ejecutar código seleccionado**: si sombreamos un pedazo de código y apretamos `Ctrl + Enter`, ejecuta sólo esa parte.
+- **Autocompletado**: a medida que escribimos un nombre nos sugiere opciones para completar (ej.: `col...`). Usar tecla "tab" (indentación).
+- **Argumentos de las funciones**: cuando escribimos una función nos muestra los argumentos que lleva (ej.: `log`). Usar tecla "tab" (indentación).
+- **Otras**: navegación por el guión, "embellecer código", atajos (`Alt + Shift + k`) y más ...
 
-M?s info: [curso R](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.4-scripts-y-directorio-de-trabajo.markdown)
+Más info: [curso R](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.4-scripts-y-directorio-de-trabajo.markdown)
 
-## Sesi?n de R
+## Sesión de R
 
-Al abrir R siempre se inicia una nueva sesi?n (o se carga una anterior). Una sesi?n est? compuesta por el conjunto de objetos que nosotres *cargamos* en ella. Un ejemplo bien simple es crear un objeto, usando la asignaci?n `<-` (`=` tambi?n funciona):
+Al abrir R siempre se inicia una nueva sesión (o se carga una anterior). Una sesión está compuesta por el conjunto de objetos que nosotres *cargamos* en ella. Un ejemplo bien simple es crear un objeto, usando la asignación `<-` (`=` también funciona):
 
 ```{r}
 x <- 5
@@ -231,11 +231,11 @@ Luego de ejectuar este comando, podemos utilizar al objeto `x` en futuros comand
 x * 4
 ```
 
-Los objetos de la sesi?n se pueden ver con el comando `ls()`, o mirando la secci?n "Ambiente" de la ventana de RStudio. En caso de querer eliminar un objeto de nuestra sesi?n, usamos la funci?n `rm` (ejemplo: `rm(x)`).
+Los objetos de la sesión se pueden ver con el comando `ls()`, o mirando la sección "Ambiente" de la ventana de RStudio. En caso de querer eliminar un objeto de nuestra sesión, usamos la función `rm` (ejemplo: `rm(x)`).
 
 ---
 
-![Una ojeada a la sesi?n de R, en RStudio.](img_clase1/rstudio_ambiente.png)
+![Una ojeada a la sesión de R, en RStudio.](img_clase1/rstudio_ambiente.png)
 
 ---
 
@@ -248,7 +248,7 @@ library(readxl) # Probar con otros paquetes, si este no funciona
 ```
 
 
-Aqu? tambi?n nos auxilia la interfaz de RStudio, gracias a la ventana "paquetes", que nos lista los paquetes dispoinbles y aquellos que ya est?n cargados en nuestra sesi?n.
+Aquí también nos auxilia la interfaz de RStudio, gracias a la ventana "paquetes", que nos lista los paquetes dispoinbles y aquellos que ya están cargados en nuestra sesión.
 
 
 
@@ -257,9 +257,9 @@ Aqu? tambi?n nos auxilia la interfaz de RStudio, gracias a la ventana "paquetes"
 
 ![Ventana de paquetes en RStudio.](img_clase1/rstudio_paquetes.png)
 
-# R y tu: como construir un buen v?nculo
+# R y tu: como construir un buen vínculo
 
-El objetivo de esta clase es facilitar la adopci?n de R como una herramienta m?s en el repertorio de cada une.
+El objetivo de esta clase es facilitar la adopción de R como una herramienta más en el repertorio de cada une.
 
 ## Puntos clave para llevarse bien con R:
 
@@ -271,26 +271,26 @@ El objetivo de esta clase es facilitar la adopci?n de R como una herramienta m?s
 - Probar
 - Utilizar la ayuda
 
-> Es posible que hayamos repetido algunos ?tems
+> Es posible que hayamos repetido algunos ítems
 
 ## Utilizando la ayuda
 
-En ingl?s se populariz? la sigla RTFM (Read The Fucking Manual). M?s all? de que tiene m?s agresividad verbal de la necesaria, expresa con claridad una sensaci?n: de que nadie se toma trabajo para leer manuales.
+En inglés se popularizó la sigla RTFM (Read The Fucking Manual). Más allá de que tiene más agresividad verbal de la necesaria, expresa con claridad una sensación: de que nadie se toma trabajo para leer manuales.
 
 > Que por otro lado, es entendible
 
-Insistimos en apoyarse en la ayuda porque es lo que hacemos en la pr?ctica. En nuestra experiencia, R tiene de las mejores documentaciones disponibles, cubriendo:
+Insistimos en apoyarse en la ayuda porque es lo que hacemos en la práctica. En nuestra experiencia, R tiene de las mejores documentaciones disponibles, cubriendo:
 
-- **Funciones**: cada funci?n tiene una p?gina de documentaci?n en la que idealmente se explican todos los requisitos, opciones y comportamientos de la misma.
-- **Temas**: hay funcionalidades que se engloban dentro de un tema o una tarea y tambi?n tienen su p?gina dedicada (ej.: [control de flujo](https://es.wikipedia.org/wiki/Estructuras_de_control)).
-- **Conjuntos de datos**: datos que vienen incluidos en el R b?sico o en paquetes agregados (ejs.: `iris`, `cars`).
+- **Funciones**: cada función tiene una página de documentación en la que idealmente se explican todos los requisitos, opciones y comportamientos de la misma.
+- **Temas**: hay funcionalidades que se engloban dentro de un tema o una tarea y también tienen su página dedicada (ej.: [control de flujo](https://es.wikipedia.org/wiki/Estructuras_de_control)).
+- **Conjuntos de datos**: datos que vienen incluidos en el R básico o en paquetes agregados (ejs.: `iris`, `cars`).
 
 
-Todas las p?ginas de ayuda de R est?n estructuradas de la misma manera, lo cual es de gran utilidad para le usuarie. Empezamos con el caso de las funciones ya que en general incluyen casi todas las secciones est?ndar de la documentaci?n.
+Todas las páginas de ayuda de R están estructuradas de la misma manera, lo cual es de gran utilidad para le usuarie. Empezamos con el caso de las funciones ya que en general incluyen casi todas las secciones estándar de la documentación.
 
-### Documentaci?n de funciones
+### Documentación de funciones
 
-Uno de los comandos que m?s usamos los usuarios de R es `help`. El mismo se puede usar de varias formas:
+Uno de los comandos que más usamos los usuarios de R es `help`. El mismo se puede usar de varias formas:
 
 ```r
 help(sort)
@@ -298,18 +298,18 @@ help(sort)
 ?"sort"
 ```
 
-En los tres ejemplos lo que se est? pidiendo es que se abra la p?gina de ayuda de la funci?n `sort`. Este tipo de documento tienen varias secciones, siempre ordenadas de la misma manera y con una estructura predeterminada, m?s all? de que no siempre est?n todas. Haciendo un breve resumen, se trata de:
+En los tres ejemplos lo que se está pidiendo es que se abra la página de ayuda de la función `sort`. Este tipo de documento tienen varias secciones, siempre ordenadas de la misma manera y con una estructura predeterminada, más allá de que no siempre están todas. Haciendo un breve resumen, se trata de:
 
-- **Nombre, t?tulo y descripci?n**: una sin?psis de lo que hace la funci?n. En general "Description" es el punto m?s informativo.
-- **Uso**: muestra como se estructura un *llamado* a la funci?n, incluyendo los argumentos, valores por defecto y m?todos por defecto.
-- **Argumentos**: una lista de los argumentos de la funci?n con una descripci?n para cada uno. Importante para entender qu? es lo que la funci?n espera como *entrada* (ie: no podemos darle tomates si lo que espera son lechugas).
-- **Detalles**: se trata de una secci?n gen?rica de texto, que puede tener mucha o poca informaci?n. Es muy ?til para entender los comportamientos de la funci?n en distintas situaciones.
-- **Valor**: es una descripci?n de la *salida* de la funci?n. Tambi?n puede explicar comportamientos para distintas situaciones. Si esper?bamos bo?atos y nos est? dando papas, aqu? deber?a estar la explicaci?n.
-- **Referencias**: referencias bibliogr?ficas utilizadas en el texto.
-- **Ver tambi?n**: otras p?ginas de ayuda (de temas o funciones) que est?n vinculadas a la actual y que nos pueden ser ?tiles o de inter?s.
-- **Ejemplos**: bloques de c?digo que podemos ejecutar en la consola para ver ejemplos de la funci?n en acci?n. Se pueden correr tambi?n usando la funci?n **`example`** (a menos que sea un bloque iniciado por la l?nea `## Not run:`).
+- **Nombre, título y descripción**: una sinópsis de lo que hace la función. En general "Description" es el punto más informativo.
+- **Uso**: muestra como se estructura un *llamado* a la función, incluyendo los argumentos, valores por defecto y métodos por defecto.
+- **Argumentos**: una lista de los argumentos de la función con una descripción para cada uno. Importante para entender qué es lo que la función espera como *entrada* (ie: no podemos darle tomates si lo que espera son lechugas).
+- **Detalles**: se trata de una sección genérica de texto, que puede tener mucha o poca información. Es muy útil para entender los comportamientos de la función en distintas situaciones.
+- **Valor**: es una descripción de la *salida* de la función. También puede explicar comportamientos para distintas situaciones. Si esperábamos boñatos y nos está dando papas, aquí debería estar la explicación.
+- **Referencias**: referencias bibliográficas utilizadas en el texto.
+- **Ver también**: otras páginas de ayuda (de temas o funciones) que están vinculadas a la actual y que nos pueden ser útiles o de interés.
+- **Ejemplos**: bloques de código que podemos ejecutar en la consola para ver ejemplos de la función en acción. Se pueden correr también usando la función **`example`** (a menos que sea un bloque iniciado por la línea `## Not run:`).
 
-### Documentaci?n de temas y datasets
+### Documentación de temas y datasets
 
 Podemos probar con el siguiente comando:
 
@@ -317,37 +317,37 @@ Podemos probar con el siguiente comando:
 ?Distributions
 ```
 
-Se trata de una p?gina de ayuda est?ndar, pero enfocada en una tem?tica en particular (en el ejemplo, las funciones para trabajar con [distribuciones de probabilidad](https://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad) incluidas en el paquete `stats`). Pueden faltar secciones, como "Argumentos", que no tienen sentido ser incluidas aqu?.
+Se trata de una página de ayuda estándar, pero enfocada en una temática en particular (en el ejemplo, las funciones para trabajar con [distribuciones de probabilidad](https://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad) incluidas en el paquete `stats`). Pueden faltar secciones, como "Argumentos", que no tienen sentido ser incluidas aquí.
 
-Por otro lado, los conjuntos de datos, o datasets, tambi?n tienen sus propias p?ginas de ayuda. Se trata generalmente de tablas con datos que sirven de ejemplo para ilustrar funcionalidades de R y/o paquetes agregados. Uno de los ejemplos m?s cl?sicos es:
+Por otro lado, los conjuntos de datos, o datasets, también tienen sus propias páginas de ayuda. Se trata generalmente de tablas con datos que sirven de ejemplo para ilustrar funcionalidades de R y/o paquetes agregados. Uno de los ejemplos más clásicos es:
 
 ```r
 ?iris # Edgar Anderson's Iris Data
 ```
 
-M?s info: [curso R](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.3-uso-de-la-ayuda.markdown)
+Más info: [curso R](https://github.com/jumanbar/Curso-R/blob/master/lecciones/1.3-uso-de-la-ayuda.markdown)
 
 ## Mensajes de error
 
-En la experiencia de quien est? aprendiendo R, o cualquier lenguaje de programaci?n, los mensajes de error son una de las cosas m?s temidas. Sin embargo, pueden ser muy ?tiles si decodificamos la informaci?n que nos brinda.
+En la experiencia de quien está aprendiendo R, o cualquier lenguaje de programación, los mensajes de error son una de las cosas más temidas. Sin embargo, pueden ser muy útiles si decodificamos la información que nos brinda.
 
-Estos mensajes se pueden clasificar en las siguientes categor?as:
+Estos mensajes se pueden clasificar en las siguientes categorías:
 
-- **Errores de sintaxis**: ocurren cuando una sentencia est? incorrectamente estructurada. Ejemplos t?picos son la falta de una coma o un par?ntesis.
+- **Errores de sintaxis**: ocurren cuando una sentencia está incorrectamente estructurada. Ejemplos típicos son la falta de una coma o un paréntesis.
 - **Objetos no encontrados**: los cuales ocurren cuando
-    + El nombre de un objeto no se escribi? correctamente. Un caso t?pico es poner mal may?sculas o min?sculas.
-    + El paquete o archivo que contiene al objeto no ha sido cargado a?n.
+    + El nombre de un objeto no se escribió correctamente. Un caso típico es poner mal mayúsculas o minúsculas.
+    + El paquete o archivo que contiene al objeto no ha sido cargado aún.
     + Faltaron comillas en el lugar que corresponde.
-    + Alg?n otro motivo (use la imaginaci?n).
-- **Otras causas**: en cuyo caso suele ser muy ?til la funci?n `traceback`.
+    + Algún otro motivo (use la imaginación).
+- **Otras causas**: en cuyo caso suele ser muy útil la función `traceback`.
 
-Para enfrentar estos casos, lo mejor es evitar que ganen los nervios y leer detenidamente los mensajes, buscando encontrar cu?l de estas fuentes es la m?s probable. Sin dudas que la experiencia ayuda mucho en estas situaciones.
+Para enfrentar estos casos, lo mejor es evitar que ganen los nervios y leer detenidamente los mensajes, buscando encontrar cuál de estas fuentes es la más probable. Sin dudas que la experiencia ayuda mucho en estas situaciones.
 
-Tambi?n es muy ?til utilizar google u otros buscadores: copiar el mensaje de error y buscar en internet, en lo posible omitiendo las partes que son espec?ficas de nuestra situaci?n particular.
+También es muy útil utilizar google u otros buscadores: copiar el mensaje de error y buscar en internet, en lo posible omitiendo las partes que son específicas de nuestra situación particular.
 
-Como mencion?bamos antes, tambi?n es importante probar, experimentar, para determinar cu?l es el problema (por ejemplo, quitando partes al c?digo que genera el error, hasta quedar con lo m?nimo necesario para reproducirlo).
+Como mencionábamos antes, también es importante probar, experimentar, para determinar cuál es el problema (por ejemplo, quitando partes al código que genera el error, hasta quedar con lo mínimo necesario para reproducirlo).
 
-En ?ltimo t?rmino, est? la posibilidad de pedir ayuda, tanto a personas que conocemos como a comunidades en internet (ej.: stackoverflow). Esto ya lo mencionamos en esta misma clase (ver secci?n "Beneficios").
+En último término, está la posibilidad de pedir ayuda, tanto a personas que conocemos como a comunidades en internet (ej.: stackoverflow). Esto ya lo mencionamos en esta misma clase (ver sección "Beneficios").
 
 ## Aplicado estos conceptos a un ejemplo
 
@@ -368,16 +368,11 @@ Error in plot.default(sort(rnorm(200)), pch = 8, col = "red", xlab = "Rank",  :
   formal argument "xlab" matched by multiple actual arguments
 ```
 
-Y sin embargo el siguiente comando s? est? escrito correctamente:
+Y sin embargo el siguiente comando sí está escrito correctamente:
 
-```{r 3_errores_solucionado, fig.cap="Figura 2: Al fin sali? la figura."}
+```{r 3_errores_solucionado, fig.cap="Figura 2: Al fin salió la figura."}
 plot(sort(rnorm(60)), pch=8, col="red", xlab="Rank",
 ylab="Variable Gaussiana")
 ```
 
 ------
-
-
-
-
-
