@@ -8,10 +8,10 @@ Repositorio con el material generado.
 Orden de las clases:
 --------------------
 
-- presentacion_curso
-- clase_1
-- clase_2_y_3
-- clase_4
+1. presentacion_curso
+2. clase_1
+3. clase_2_y_3
+4. clase_4
 
 Autores:
 --------
