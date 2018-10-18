@@ -15,9 +15,7 @@ Clase 4
 - Escribir metadatos descriptivos del conjunto de datos
 
 El archivo a utilizar en este script es [recordTable.csv](recordTable.csv)
-Otros archivos útiles son :
-
-  - Formato de campos estándares de Darwin Core [simple_dwc_horizontal.csv](simple_dwc_horizontal.csv)
-  - Estándar GBIF Uruguay [Plantilla para datos GBIF.xlsx](Plantilla para datos GBIF.xlsx)
+Otros archivos útiles son : Formato de campos estándares de Darwin Core [simple_dwc_horizontal.csv](simple_dwc_horizontal.csv)
+ y Estándar GBIF Uruguay [Plantilla para datos GBIF.xlsx](Plantilla para datos GBIF.xlsx)
   
 
