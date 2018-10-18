@@ -10,8 +10,8 @@ Fotos:
     - camara1
 
 
-Tablas (en la carpeta curso_camtrapR/data):
+Tablas:
 
-- ../../data/camaras.csv
-- ../../data/camara_una_estacion.csv
-- ../../data/tabla_una_cam.csv
+- camaras.csv
+- camara_una_estacion.csv
+- tabla_una_cam.csv
