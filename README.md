@@ -8,5 +8,5 @@ Repositorio con el material generado.
 Autores:
 
 Juan Manuel Barreneche - jumanbar <at> gmail.com  
-Gabriel Perazza 
+Gabriel Perazza  
 Florencia Grattarola - flograttarola <at> gmail.com 
