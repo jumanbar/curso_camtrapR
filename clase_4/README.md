@@ -14,8 +14,8 @@ En la presentación se explicarán cuáles son los pasos necesarios para compart
 4- Escribir metadatos descriptivos del conjunto de datos.
 
 ### 2- Seguir el script [clase_4.R](clase_4.R):
-El script son permitirá estandarizar la información en una nueva tabla y escribir metadatos asociados.
-La tabla a utilizar como input en este script es [recordTable.csv](recordTable.csv)
+La tabla a utilizar como input en este script es [recordTable.csv](recordTable.csv) 
+El script son permitirá estandarizar la información en una nueva tabla y escribir metadatos asociados. Para eso realizaremos:
 
 - Chequeo de nombres de especies
 - Estandarización de campos en la tabla 
