@@ -16,6 +16,6 @@ Orden de las clases:
 Autores:
 --------
 
-Juan Manuel Barreneche - jumanbar <at> gmail.com  
+Juan Manuel Barreneche - jumanbar \[at\] gmail.com  
 Gabriel Perazza  
-Florencia Grattarola - flograttarola <at> gmail.com 
+Florencia Grattarola - flograttarola \[at\] gmail.com 
