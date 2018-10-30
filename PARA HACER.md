@@ -3,7 +3,11 @@ Para hacer
 
 - Arreglar el .Rmd, usando encoding correcto y haciendo referencias correctas a los archivos (carpeta img_clase1, deprecar la generada automáticamente al hacer el html).
 
-- Unificar ancho de líneas hasta 64 caracteres, ya que en proyector hay menos espacio. Interrumpir las líneas largas para que entren; tanto para código como para comentarios).
+- Unificar ancho de líneas hasta 64 caracteres, ya que en proyector hay menos espacio. Interrumpir las líneas largas para que entren; tanto para código como para comentarios). Comandos de RStudio útiles para esto:
+    + `Ctrl+Shift+/`: reflow de comentarios
+    + `Ctrl+Shift+A`: reflow de código
+
+- Usar el sistema de delimitación de secciones de scripts de RStudio. Comando útil: `Ctrl+Shift+R`
 
 - Posible cambio: pasar todas las clases a Rmarkdown. Ahí ya se puede prescindir de muchos comentarios y te olvidás de qué tan anchas son las líneas en el texto. La contra que le veo es que hay que generar todas las imágenes primero y luego agregarlas al documento manualmente con:
 
