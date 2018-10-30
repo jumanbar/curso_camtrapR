@@ -8,11 +8,11 @@ Repositorio con el material generado.
 Orden de las clases:
 --------------------
 
-1. [presentacion_curso](https://github.com/jumanbar/curso_camtrapR/tree/master/presentacion_curso)  
-2. [clase_1](https://github.com/jumanbar/curso_camtrapR/tree/master/clase_1)  
-3. [etiquetado con digiKam](https://github.com/jumanbar/curso_camtrapR/tree/master/etiquetado_digiKam)  
-3. [clase_2_y_3](https://github.com/jumanbar/curso_camtrapR/tree/master/clase_2_y_3)  
-4. [clase_4](https://github.com/jumanbar/curso_camtrapR/tree/master/clase_4)  
+1. [presentacion_curso](./presentacion_curso)  
+2. [clase_1](./clase_1)  
+3. [etiquetado con digiKam](./etiquetado_digiKam)  
+3. [clase_2_y_3](./clase_2_y_3)  
+4. [clase_4](./clase_4)  
 
 Autores:
 --------
