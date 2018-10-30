@@ -9,7 +9,7 @@ Proponemos el siguiente orden para esta clase:
 ### 1. R, una recorrida:
 
 Archivos:
-  - [clase_1_consejos.Rmd](clase_1_consejos.Rmd)
+  - [clase_1_consejos.md](clase_1_consejos.md)
 
 Este documento muestra las características principales de R, incluyendo las preguntas ¿qué es? ¿para qué sirve? ¿por qué R?. También da consejos para tener un buen vínculo con R, incluyendo formas de conseguir ayuda y enfrentarse a errores.
 
