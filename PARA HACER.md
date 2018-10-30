@@ -3,7 +3,7 @@ Para hacer
 
 - Arreglar el .Rmd, usando encoding correcto y haciendo referencias correctas a los archivos (carpeta img_clase1, deprecar la generada automáticamente al hacer el html).
 
-- Unificar ancho de líneas (hasta n caracteres, tal vez 60 o un número bajo, ya que en proyector hay menos espacio). Interrumpir las líneas largas para que entren; tanto para código como para comentarios).
+- Unificar ancho de líneas hasta 64 caracteres, ya que en proyector hay menos espacio. Interrumpir las líneas largas para que entren; tanto para código como para comentarios).
 
 - Posible cambio: pasar todas las clases a Rmarkdown. Ahí ya se puede prescindir de muchos comentarios y te olvidás de qué tan anchas son las líneas en el texto. La contra que le veo es que hay que generar todas las imágenes primero y luego agregarlas al documento manualmente con:
 
