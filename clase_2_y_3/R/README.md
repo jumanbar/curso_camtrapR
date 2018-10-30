@@ -1,5 +1,5 @@
-Datos usados por [el script de R](clase_2_y_3.R)
-================================================
+Datos usados por el script de R ([clase_2_y_3.R](clase_2_y_3.R))
+================================================================
 
 Fotos:
 
